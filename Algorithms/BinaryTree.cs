@@ -19,4 +19,20 @@ public class BinaryTree
         Console.Write(node.d + "->");
         InOrder(node.right);
     }
+
+    public void PreOrder(TreeNode? node)
+    {
+        if (node == null) return;
+        Console.Write(node.d + "->");
+        PreOrder(node.left);
+        PreOrder(node.right);
+    }
+
+    public void PostOrder(TreeNode? node)
+    {
+        if(node == null) return;
+        PostOrder(node.left);
+        PostOrder(node.right);
+        Console.Write(node.d + "->");
+    }
 }
