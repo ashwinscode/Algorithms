@@ -101,3 +101,5 @@ Console.WriteLine();
 bt.PreOrder(bt.head);
 Console.WriteLine();
 bt.PostOrder(bt.head);
+Console.WriteLine();
+bt.BFS(bt.head);
