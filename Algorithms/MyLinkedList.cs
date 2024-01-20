@@ -70,6 +70,7 @@ public class LinkedListClass
                 }
                 travelNode = travelNode?.next;
             }
+            Console.WriteLine("Node with data {0} cannot be found", d);
         }
     }
 
