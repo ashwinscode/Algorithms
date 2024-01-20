@@ -1,14 +1,16 @@
 public class MyQueue
 {
     int[] arr;
-    int fIndex = 0; 
-    int rIndex = 0;
+    int fIndex; 
+    int rIndex;
     int MAX;
     
-    public MyQueue(int m)
+    public MyQueue(int m = 10)
     {
         MAX = m;
         arr = new int[MAX];
+        fIndex = 0;
+        rIndex = 0;
     }
 
     public void Enqueue(int d)
